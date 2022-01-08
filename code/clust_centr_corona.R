@@ -1,15 +1,10 @@
 # the most appropriate clustering method among hierarchical, k-means, and PAM
 
 library(factoextra)
-library(clustertend)
-library(clValid)
 
 # Reading Scaled centrality values
-
 corona_scaled = read.csv(file = ".outputs/corona_scaled.csv", 
                          header = TRUE)
-#corona_dt = read.csv(file = ".outputs/corona_dt.csv", 
-#                     header = TRUE)
 
 # Rename column names
 names(corona_scaled)[2] <- "Aver.Dis"
@@ -42,7 +37,7 @@ res <- get_clust_tendency(df, n = 20, graph = TRUE)
 print(res$hopkins_stat)
 
 # Compute k-means
-res.km <- eclust(df, "kmeans", nstart = 25)
+#res.km <- eclust(df, "kmeans",hc_method = "ward.D2", nstart = 25)
 
 # Gap statistic plot
 #fviz_gap_stat(res.km$gap_stat)
@@ -51,8 +46,9 @@ res.km <- eclust(df, "kmeans", nstart = 25)
 #fviz_silhouette(res.km, label = TRUE)+
 #  labs(title = "SARS-CoV-2")
 
+
 # Compute pam
-#res.pam <- eclust(df, "pam", nstart = 25)
+#res.pam <- eclust(df, "pam", hc_method = "ward.D2", nstart = 25)
 
 # Gap statistic plot
 #fviz_gap_stat(res.pam$gap_stat)
@@ -60,15 +56,15 @@ res.km <- eclust(df, "kmeans", nstart = 25)
 # Silhouette plot
 #fviz_silhouette(res.pam, label = TRUE)
 
-# Enhanced hierarchical clustering
-res.hc <- eclust(df, "hclust", nstart = 25) 
 
-dev.new(width=6, height=4, unit="cm")
+# Enhanced hierarchical clustering
+res.hc <- eclust(df, "hclust", hc_method = "ward.D2", nstart = 25) 
 
 # dendrogam
 #fviz_dend(res.hc, rect = TRUE,  color_labels_by_k = FALSE, cex = 1)+ 
 #  labs(title = "SARS-CoV-2")
 
 # silhouette plot
-#fviz_silhouette(res.hc, label = TRUE) 
+#fviz_silhouette(res.hc, label = TRUE)
+
 
