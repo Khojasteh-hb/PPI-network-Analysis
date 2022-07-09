@@ -16,7 +16,7 @@ Khorsand B, Savadi, A., & Naghibzadeh, M. (2020). SARS-CoV-2-human protein-prote
 
 Khorsand B, Savadi, A., Zahiri, J., & Naghibzadeh, M. : Alpha influenza virus infiltration prediction using virus-human protein–protein interaction network. . Math Biosci Eng 2020, 17(4)(3109-29.).
 
-# Feedback:
 
-Please do not hesitate to contact us if there is anything we may be able to help you with: Hakimeh Khojasteh, khojasteh.hb@gmail.com
+# Contact
+If you have any questions, do not hesitate to contact us by khojasteh@znu.ac.ir or khojasteh.hb@gmail.com, we will be happy to assist.
 
