@@ -13,4 +13,4 @@ The analysis is implemented in R with iGraph lib.
 Khojasteh, H., Khanteymoori, A., & Olyaee, M. H. (2022). Comparing protein–protein interaction networks of SARS-CoV-2 and (H1N1) influenza using topological features. Scientific reports, 12(1), 1-11.
 
 # Contact
-If you have any questions, do not hesitate to contact us by khojasteh@znu.ac.ir or khojasteh.hb@gmail.com, we will be happy to assist.
+If you have any questions, do not hesitate to contact us at khojasteh.hb@gmail.com, we will be happy to assist.
