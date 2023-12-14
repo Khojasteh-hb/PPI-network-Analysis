@@ -1,4 +1,4 @@
-# Comparing-PPI-networks-of-SARS-CoV-2-and-H1N1-influenza
+# PPI-network-Analysis
  This code is related to our recently proposed method for:
 - Studying SARS-CoV-2 and (H1N1) influenza PPINs to investigate similarities and differences between them.
 - Examining complex network properties such as graph density, degree distribution, and 21 different centrality measures.
